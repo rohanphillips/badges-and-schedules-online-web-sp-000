@@ -17,3 +17,15 @@ def assign_rooms(array)
   end
   return newarray
 end
+
+def printer(array)
+  workingarray = []
+  workingarray = batch_badge_creator(array)
+  workingarray.each do |n|
+    puts n 
+  end
+  workingarray = assign_rooms(array)
+  workingarray.each do |n|
+    puts n 
+  end
+end
