@@ -1,3 +1,4 @@
+require "pry"
 
 def badge_maker(name)
   "Hello, my name is #{name}."
@@ -12,6 +13,7 @@ def assign_rooms(array)
   roomstring = ""
   array.each do |n|
     roomstring = n.to_s
+    binding.pry
     newarray << "Hello, #{array[n]}! You'll be assigned to room #{roomstring}!"
   end
   return newarray
