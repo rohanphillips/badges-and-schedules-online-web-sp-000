@@ -13,7 +13,6 @@ def assign_rooms(array)
   roomstring = ""
   array.each_with_index do |n, index|
     roomstring = n.to_s
-    binding.pry
     newarray << "Hello, #{n}! You'll be assigned to room #{index}!"
   end
   return newarray
