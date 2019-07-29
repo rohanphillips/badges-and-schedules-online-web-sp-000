@@ -13,7 +13,7 @@ def assign_rooms(array)
   roomstring = ""
   array.each_with_index do |n, index|
     roomstring = n.to_s
-    newarray << "Hello, #{n}! You'll be assigned to room #{index}!"
+    newarray << "Hello, #{n}! You'll be assigned to room #{index + 1}!"
   end
   return newarray
 end
