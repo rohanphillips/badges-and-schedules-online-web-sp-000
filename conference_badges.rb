@@ -9,8 +9,10 @@ end
 
 def assign_rooms(array)
   newarray = []
+  roomstring = ""
   array.each do |n|
-    newarray << "Hello, #{array[n]}! You'll be assigned to room #{n.to_s}!"
+    roomstring = n.to_s
+    newarray << "Hello, #{array[n]}! You'll be assigned to room #{roomstring}!"
   end
   return newarray
 end
