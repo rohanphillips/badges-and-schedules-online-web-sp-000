@@ -12,4 +12,5 @@ def assign_rooms(array)
   array.each do |n|
     newarray << "Hello, #{array[n]}! You'll be assigned to room #{n.to_s}!"
   end
+  return newarray
 end
